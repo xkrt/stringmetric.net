@@ -14,6 +14,3 @@ let distance (str1: string) (str2: string): int option =
             |> Seq.map (fun (x,y) -> if x <> y then 1 else 0)
             |> Seq.sum
         Some diffCount
-
-let metric (str1: string) (str2: string): float option =
-    distance str1 str2 <!> (fun diffCount -> 1.0 - float(diffCount) / float(str1.Length))

@@ -42,7 +42,6 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Monad.fs" />
     <Compile Include="Hamming.fs" />
   </ItemGroup>
   <PropertyGroup>
